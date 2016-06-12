@@ -2,7 +2,7 @@
 echo Creating NuGet package
 set Name=Repository
 set PackageId=Repository.NET
-set Version=1.0.0
+set Version=1.0.1
 
 echo.
 echo Cleaning convention based working directory...
@@ -40,14 +40,14 @@ xcopy ..\..\Source\%Name%.Net461\bin\Release\%Name%.* Working\lib\net461\* /s /e
 
 echo.
 echo Packaging...
-..\..\Tools\NuGet\nuget.exe pack Working\%PackageId%.nuspec -Version %Version%
+..\..\Tools\NuGet\nuget.exe pack "Working\%PackageId%.nuspec" -Version %Version%
 
 echo.
 echo Moving package...
-move %PackageId%.%Version%.nupkg Packages
+move "%PackageId%.%Version%.nupkg" Packages
 
 echo.
 echo Pushing package...
-..\..\Tools\NuGet\nuget.exe push Packages\%PackageId%.%Version%.nupkg %NuGetApiKey% -Source https://www.nuget.org/api/v2/package
+..\..\Tools\NuGet\nuget.exe push "Packages\%PackageId%.%Version%.nupkg" %NuGetApiKey% -Source https://www.nuget.org/api/v2/package
 
 pause

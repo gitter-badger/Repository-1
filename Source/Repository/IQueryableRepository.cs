@@ -5,6 +5,6 @@ namespace Repository
 {
     public interface IQueryableRepository<T> : IRepository
     {
-        Task<IQueryable<T>> GetAsync<TCriteria>();
+        Task<IQueryable<T>> GetAsync();
     }
 }
