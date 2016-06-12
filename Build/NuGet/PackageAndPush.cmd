@@ -40,7 +40,7 @@ xcopy ..\..\Source\%Name%.Net461\bin\Release\%Name%.* Working\lib\net461\* /s /e
 
 echo.
 echo Packaging...
-..\..\Tools\NuGet\nuget.exe pack Working\%Name%.nuspec -Version %Version%
+..\..\Tools\NuGet\nuget.exe pack Working\%PackageId%.nuspec -Version %Version%
 
 echo.
 echo Moving package...
