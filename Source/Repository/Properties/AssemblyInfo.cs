@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("Respository.NET")]
-[assembly: AssemblyDescription("Respository.NET is library containing the primary abstractions and fundamental types to support a generic and asynchronous repository.")]
+[assembly: AssemblyDescription("Respository.NET is library containing the abstractions and fundamental types to support a generic and asynchronous repository.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Scott Keith Thomas, Jr.")]
 [assembly: AssemblyProduct("Respository.NET")]
