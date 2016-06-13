@@ -2,7 +2,7 @@
 echo Creating NuGet package
 set Name=Repository
 set PackageId=Repository.NET
-set Version=1.0.1
+set Version=%APPVEYOR_BUILD_VERSION%
 
 echo.
 echo Cleaning convention based working directory...
