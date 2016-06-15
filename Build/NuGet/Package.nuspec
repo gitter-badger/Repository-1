@@ -5,7 +5,7 @@
     <version>0.0.0</version>
     <authors>Scott Keith Thomas, Jr.</authors>
     <description>Respository.NET is library containing the abstractions and fundamental types to support a generic and asynchronous repository.</description>
-    <tags>Repository.NET</tags>
+    <tags>async asynchronous generic repository</tags>
     <iconUrl>https://raw.githubusercontent.com/skthomasjr/Repository/master/Build/NuGet/Package.png</iconUrl>
     <licenseUrl>https://raw.githubusercontent.com/skthomasjr/Repository/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/skthomasjr/Repository.NET</projectUrl>
